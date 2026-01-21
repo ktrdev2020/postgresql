@@ -1,0 +1,11 @@
+2026-01-21 13:02:13.939 UTC,,,49,,6970ce55.31,1,,2026-01-21 13:02:13 UTC,,0,LOG,00000,"starting PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit",,,,,,,,,"","postmaster",,0
+2026-01-21 13:02:13.948 UTC,,,49,,6970ce55.31,2,,2026-01-21 13:02:13 UTC,,0,LOG,00000,"listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432""",,,,,,,,,"","postmaster",,0
+2026-01-21 13:02:14.014 UTC,,,53,,6970ce56.35,1,,2026-01-21 13:02:14 UTC,,0,LOG,00000,"database system was shut down at 2026-01-21 13:02:09 UTC",,,,,,,,,"","startup",,0
+2026-01-21 13:02:14.081 UTC,,,49,,6970ce55.31,3,,2026-01-21 13:02:13 UTC,,0,LOG,00000,"database system is ready to accept connections",,,,,,,,,"","postmaster",,0
+2026-01-21 13:02:20.048 UTC,,,49,,6970ce55.31,4,,2026-01-21 13:02:13 UTC,,0,LOG,00000,"received fast shutdown request",,,,,,,,,"","postmaster",,0
+2026-01-21 13:02:20.065 UTC,,,49,,6970ce55.31,5,,2026-01-21 13:02:13 UTC,,0,LOG,00000,"aborting any active transactions",,,,,,,,,"","postmaster",,0
+2026-01-21 13:02:20.088 UTC,,,49,,6970ce55.31,6,,2026-01-21 13:02:13 UTC,,0,LOG,00000,"background worker ""logical replication launcher"" (PID 56) exited with exit code 1",,,,,,,,,"","postmaster",,0
+2026-01-21 13:02:20.092 UTC,,,51,,6970ce56.33,1,,2026-01-21 13:02:14 UTC,,0,LOG,00000,"shutting down",,,,,,,,,"","checkpointer",,0
+2026-01-21 13:02:20.101 UTC,,,51,,6970ce56.33,2,,2026-01-21 13:02:14 UTC,,0,LOG,00000,"checkpoint starting: shutdown immediate",,,,,,,,,"","checkpointer",,0
+2026-01-21 13:02:21.337 UTC,,,51,,6970ce56.33,3,,2026-01-21 13:02:14 UTC,,0,LOG,00000,"checkpoint complete: wrote 925 buffers (5.6%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.653 s, sync=0.519 s, total=1.246 s; sync files=301, longest=0.019 s, average=0.002 s; distance=4256 kB, estimate=4256 kB; lsn=0/1915960, redo lsn=0/1915960",,,,,,,,,"","checkpointer",,0
+2026-01-21 13:02:23.010 UTC,,,49,,6970ce55.31,7,,2026-01-21 13:02:13 UTC,,0,LOG,00000,"database system is shut down",,,,,,,,,"","postmaster",,0

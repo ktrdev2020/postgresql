@@ -1,0 +1,37 @@
+services:
+  postgres:
+    image: postgres:17
+    container_name: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: mydatabase
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./data:/var/lib/postgresql/data
+      - ./backup:/backup
+      - ./logs:/var/log/postgresql
+    # Enable logging collector to write logs to the mounted directory
+    command: >
+      postgres 
+      -c logging_collector=on 
+      -c log_destination=stderr,csvlog 
+      -c log_directory=/var/log/postgresql 
+      -c log_filename=postgresql-%Y-%m-%d_%H%M%S.log
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: password
+    ports:
+      - "5050:80"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+
+volumes:
+  pgadmin-data:

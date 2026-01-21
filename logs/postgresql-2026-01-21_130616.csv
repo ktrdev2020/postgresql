@@ -1,0 +1,6 @@
+2026-01-21 13:06:16.316 UTC,,,1,,6970cf48.1,1,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"starting PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit",,,,,,,,,"","postmaster",,0
+2026-01-21 13:06:16.317 UTC,,,1,,6970cf48.1,2,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"listening on IPv4 address ""0.0.0.0"", port 5432",,,,,,,,,"","postmaster",,0
+2026-01-21 13:06:16.317 UTC,,,1,,6970cf48.1,3,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"listening on IPv6 address ""::"", port 5432",,,,,,,,,"","postmaster",,0
+2026-01-21 13:06:16.337 UTC,,,1,,6970cf48.1,4,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432""",,,,,,,,,"","postmaster",,0
+2026-01-21 13:06:16.394 UTC,,,30,,6970cf48.1e,1,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"database system was shut down at 2026-01-21 13:06:02 UTC",,,,,,,,,"","startup",,0
+2026-01-21 13:06:16.522 UTC,,,1,,6970cf48.1,5,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"database system is ready to accept connections",,,,,,,,,"","postmaster",,0

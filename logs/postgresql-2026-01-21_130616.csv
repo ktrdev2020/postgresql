@@ -4,3 +4,5 @@
 2026-01-21 13:06:16.337 UTC,,,1,,6970cf48.1,4,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432""",,,,,,,,,"","postmaster",,0
 2026-01-21 13:06:16.394 UTC,,,30,,6970cf48.1e,1,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"database system was shut down at 2026-01-21 13:06:02 UTC",,,,,,,,,"","startup",,0
 2026-01-21 13:06:16.522 UTC,,,1,,6970cf48.1,5,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"database system is ready to accept connections",,,,,,,,,"","postmaster",,0
+2026-01-21 13:11:16.388 UTC,,,28,,6970cf48.1c,1,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"checkpoint starting: time",,,,,,,,,"","checkpointer",,0
+2026-01-21 13:12:51.603 UTC,,,28,,6970cf48.1c,2,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"checkpoint complete: wrote 928 buffers (5.7%); 1 WAL file(s) added, 0 removed, 0 recycled; write=94.449 s, sync=0.506 s, total=95.215 s; sync files=302, longest=0.014 s, average=0.002 s; distance=4265 kB, estimate=4265 kB; lsn=0/1D47178, redo lsn=0/1D470E8",,,,,,,,,"","checkpointer",,0

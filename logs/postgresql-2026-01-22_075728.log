@@ -1,0 +1,18 @@
+2026-01-22 07:57:28.194 UTC [1] LOG:  starting PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+2026-01-22 07:57:28.195 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-01-22 07:57:28.195 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-01-22 07:57:28.212 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-01-22 07:57:28.255 UTC [67] LOG:  database system was shut down at 2026-01-22 07:57:27 UTC
+2026-01-22 07:57:28.330 UTC [1] LOG:  database system is ready to accept connections
+2026-01-22 08:02:28.314 UTC [65] LOG:  checkpoint starting: time
+2026-01-22 08:02:32.222 UTC [65] LOG:  checkpoint complete: wrote 38 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.631 s, sync=0.187 s, total=3.909 s; sync files=12, longest=0.028 s, average=0.016 s; distance=183 kB, estimate=183 kB; lsn=0/1943920, redo lsn=0/19438C8
+2026-01-22 08:06:50.261 UTC [94] ERROR:  relation "__EFMigrationsHistory" does not exist at character 46
+2026-01-22 08:06:50.261 UTC [94] STATEMENT:  SELECT "MigrationId", "ProductVersion"
+	FROM "__EFMigrationsHistory"
+	ORDER BY "MigrationId"
+2026-01-22 08:07:28.254 UTC [65] LOG:  checkpoint starting: time
+2026-01-22 08:09:05.613 UTC [65] LOG:  checkpoint complete: wrote 953 buffers (5.8%); 1 WAL file(s) added, 0 removed, 0 recycled; write=96.203 s, sync=0.858 s, total=97.360 s; sync files=335, longest=0.013 s, average=0.003 s; distance=4455 kB, estimate=4455 kB; lsn=0/1D9DAA8, redo lsn=0/1D9D700
+2026-01-22 08:12:28.715 UTC [65] LOG:  checkpoint starting: time
+2026-01-22 08:12:31.350 UTC [65] LOG:  checkpoint complete: wrote 26 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.545 s, sync=0.046 s, total=2.635 s; sync files=14, longest=0.005 s, average=0.004 s; distance=8 kB, estimate=4010 kB; lsn=0/1D9F870, redo lsn=0/1D9F818
+2026-01-22 08:17:28.378 UTC [65] LOG:  checkpoint starting: time
+2026-01-22 08:17:28.543 UTC [65] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.111 s, sync=0.008 s, total=0.166 s; sync files=2, longest=0.005 s, average=0.004 s; distance=0 kB, estimate=3609 kB; lsn=0/1D9FC10, redo lsn=0/1D9FBB8

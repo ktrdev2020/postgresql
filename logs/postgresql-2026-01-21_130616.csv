@@ -6,3 +6,18 @@
 2026-01-21 13:06:16.522 UTC,,,1,,6970cf48.1,5,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"database system is ready to accept connections",,,,,,,,,"","postmaster",,0
 2026-01-21 13:11:16.388 UTC,,,28,,6970cf48.1c,1,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"checkpoint starting: time",,,,,,,,,"","checkpointer",,0
 2026-01-21 13:12:51.603 UTC,,,28,,6970cf48.1c,2,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"checkpoint complete: wrote 928 buffers (5.7%); 1 WAL file(s) added, 0 removed, 0 recycled; write=94.449 s, sync=0.506 s, total=95.215 s; sync files=302, longest=0.014 s, average=0.002 s; distance=4265 kB, estimate=4265 kB; lsn=0/1D47178, redo lsn=0/1D470E8",,,,,,,,,"","checkpointer",,0
+2026-01-21 13:31:16.427 UTC,,,28,,6970cf48.1c,3,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"checkpoint starting: time",,,,,,,,,"","checkpointer",,0
+2026-01-21 13:31:16.615 UTC,,,28,,6970cf48.1c,4,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.111 s, sync=0.012 s, total=0.188 s; sync files=1, longest=0.012 s, average=0.012 s; distance=5 kB, estimate=3839 kB; lsn=0/1D487C8, redo lsn=0/1D48770",,,,,,,,,"","checkpointer",,0
+2026-01-21 15:53:40.779 UTC,"admin","atswot",697,"172.21.0.1:46774",6970f684.2b9,1,"PARSE",2026-01-21 15:53:40 UTC,4/3,0,ERROR,42P01,"relation ""__EFMigrationsHistory"" does not exist",,,,,,"SELECT ""MigrationId"", ""ProductVersion""
+FROM ""__EFMigrationsHistory""
+ORDER BY ""MigrationId""",46,,"","client backend",,0
+2026-01-21 15:56:34.382 UTC,"admin","atswot",710,"172.21.0.1:57390",6970f732.2c6,1,"PARSE",2026-01-21 15:56:34 UTC,5/3,0,ERROR,42P01,"relation ""__EFMigrationsHistory"" does not exist",,,,,,"SELECT ""MigrationId"", ""ProductVersion""
+FROM ""__EFMigrationsHistory""
+ORDER BY ""MigrationId""",46,,"","client backend",,0
+2026-01-21 16:01:33.246 UTC,"admin","atswot",731,"172.21.0.1:37078",6970f85d.2db,1,"PARSE",2026-01-21 16:01:33 UTC,6/3,0,ERROR,42P01,"relation ""__EFMigrationsHistory"" does not exist",,,,,,"SELECT ""MigrationId"", ""ProductVersion""
+FROM ""__EFMigrationsHistory""
+ORDER BY ""MigrationId""",46,,"","client backend",,0
+2026-01-21 16:06:18.162 UTC,,,28,,6970cf48.1c,5,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"checkpoint starting: time",,,,,,,,,"","checkpointer",,0
+2026-01-21 16:06:27.390 UTC,,,28,,6970cf48.1c,6,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"checkpoint complete: wrote 83 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=8.657 s, sync=0.388 s, total=9.230 s; sync files=74, longest=0.073 s, average=0.006 s; distance=329 kB, estimate=3488 kB; lsn=0/1D9AC68, redo lsn=0/1D9ABD8",,,,,,,,,"","checkpointer",,0
+2026-01-21 16:11:18.631 UTC,,,28,,6970cf48.1c,7,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"checkpoint starting: time",,,,,,,,,"","checkpointer",,0
+2026-01-21 16:11:20.651 UTC,,,28,,6970cf48.1c,8,,2026-01-21 13:06:16 UTC,,0,LOG,00000,"checkpoint complete: wrote 20 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.934 s, sync=0.018 s, total=2.020 s; sync files=11, longest=0.006 s, average=0.002 s; distance=1 kB, estimate=3139 kB; lsn=0/1D9B088, redo lsn=0/1D9B030",,,,,,,,,"","checkpointer",,0

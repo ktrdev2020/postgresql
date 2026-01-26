@@ -1,0 +1,48 @@
+2026-01-26 10:57:28.562 UTC [1] LOG:  starting PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+2026-01-26 10:57:28.564 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-01-26 10:57:28.564 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-01-26 10:57:28.612 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-01-26 10:57:28.730 UTC [31] LOG:  database system was interrupted; last known up at 2026-01-26 08:44:24 UTC
+2026-01-26 10:57:38.745 UTC [31] LOG:  syncing data directory (pre-fsync), elapsed time: 10.00 s, current path: ./base/16388/13471_vm
+2026-01-26 10:57:48.737 UTC [31] LOG:  syncing data directory (pre-fsync), elapsed time: 20.00 s, current path: ./base/5/1255_fsm
+2026-01-26 10:57:55.010 UTC [31] LOG:  database system was not properly shut down; automatic recovery in progress
+2026-01-26 10:57:55.057 UTC [31] LOG:  redo starts at 0/1F17248
+2026-01-26 10:57:55.058 UTC [31] LOG:  invalid record length at 0/1F17350: expected at least 24, got 0
+2026-01-26 10:57:55.058 UTC [31] LOG:  redo done at 0/1F17318 system usage: CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s
+2026-01-26 10:57:55.101 UTC [29] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-01-26 10:57:55.208 UTC [29] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.020 s, sync=0.026 s, total=0.109 s; sync files=2, longest=0.022 s, average=0.013 s; distance=0 kB, estimate=0 kB; lsn=0/1F17350, redo lsn=0/1F17350
+2026-01-26 10:57:55.244 UTC [1] LOG:  database system is ready to accept connections
+2026-01-26 11:12:55.324 UTC [29] LOG:  checkpoint starting: time
+2026-01-26 11:12:56.298 UTC [29] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.867 s, sync=0.015 s, total=0.978 s; sync files=7, longest=0.004 s, average=0.003 s; distance=4 kB, estimate=4 kB; lsn=0/1F185D0, redo lsn=0/1F18578
+2026-01-26 12:07:55.691 UTC [29] LOG:  checkpoint starting: time
+2026-01-26 12:08:01.714 UTC [29] LOG:  checkpoint complete: wrote 57 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=5.802 s, sync=0.098 s, total=6.031 s; sync files=54, longest=0.026 s, average=0.002 s; distance=261 kB, estimate=261 kB; lsn=0/1F59AE8, redo lsn=0/1F59A58
+2026-01-26 12:17:55.781 UTC [29] LOG:  checkpoint starting: time
+2026-01-26 12:17:55.997 UTC [29] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.116 s, sync=0.036 s, total=0.217 s; sync files=2, longest=0.022 s, average=0.018 s; distance=4 kB, estimate=235 kB; lsn=0/1F5AE18, redo lsn=0/1F5ADC0
+2026-01-26 12:47:56.194 UTC [29] LOG:  checkpoint starting: time
+2026-01-26 12:47:56.831 UTC [29] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.527 s, sync=0.043 s, total=0.638 s; sync files=5, longest=0.024 s, average=0.009 s; distance=5 kB, estimate=212 kB; lsn=0/1F5C290, redo lsn=0/1F5C238
+2026-01-26 12:52:56.910 UTC [29] LOG:  checkpoint starting: time
+2026-01-26 12:52:59.134 UTC [29] LOG:  checkpoint complete: wrote 21 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.085 s, sync=0.061 s, total=2.224 s; sync files=15, longest=0.018 s, average=0.005 s; distance=12 kB, estimate=192 kB; lsn=0/1F5F410, redo lsn=0/1F5F3B8
+2026-01-26 14:17:57.088 UTC [29] LOG:  checkpoint starting: time
+2026-01-26 14:17:57.324 UTC [29] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.125 s, sync=0.036 s, total=0.236 s; sync files=2, longest=0.022 s, average=0.018 s; distance=5 kB, estimate=173 kB; lsn=0/1F60960, redo lsn=0/1F60908
+2026-01-26 14:22:57.342 UTC [29] LOG:  checkpoint starting: time
+2026-01-26 14:22:57.445 UTC [29] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.018 s, sync=0.011 s, total=0.103 s; sync files=1, longest=0.011 s, average=0.011 s; distance=0 kB, estimate=156 kB; lsn=0/1F60AF8, redo lsn=0/1F60AA0
+2026-01-26 14:42:57.638 UTC [29] LOG:  checkpoint starting: time
+2026-01-26 14:42:57.957 UTC [29] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.225 s, sync=0.028 s, total=0.322 s; sync files=3, longest=0.019 s, average=0.010 s; distance=5 kB, estimate=141 kB; lsn=0/1F620F8, redo lsn=0/1F620A0
+2026-01-26 15:02:58.247 UTC [29] LOG:  checkpoint starting: time
+2026-01-26 15:02:59.170 UTC [29] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.843 s, sync=0.035 s, total=0.924 s; sync files=7, longest=0.016 s, average=0.005 s; distance=5 kB, estimate=127 kB; lsn=0/1F63798, redo lsn=0/1F63740
+2026-01-26 15:12:58.308 UTC [29] LOG:  checkpoint starting: time
+2026-01-26 15:13:00.794 UTC [29] LOG:  checkpoint complete: wrote 24 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.375 s, sync=0.056 s, total=2.486 s; sync files=16, longest=0.016 s, average=0.004 s; distance=4 kB, estimate=115 kB; lsn=0/1F64A28, redo lsn=0/1F649D0
+2026-01-26 15:17:27.420 UTC [1] LOG:  received fast shutdown request
+2026-01-26 15:17:27.461 UTC [1] LOG:  aborting any active transactions
+2026-01-26 15:17:27.520 UTC [43] FATAL:  terminating connection due to administrator command
+2026-01-26 15:17:27.533 UTC [213] FATAL:  terminating connection due to administrator command
+2026-01-26 15:17:27.538 UTC [212] FATAL:  terminating connection due to administrator command
+2026-01-26 15:17:27.564 UTC [37] FATAL:  terminating connection due to administrator command
+2026-01-26 15:17:27.569 UTC [39] FATAL:  terminating connection due to administrator command
+2026-01-26 15:17:27.592 UTC [36] FATAL:  terminating connection due to administrator command
+2026-01-26 15:17:27.601 UTC [1] LOG:  background worker "logical replication launcher" (PID 34) exited with exit code 1
+2026-01-26 15:17:27.617 UTC [46] FATAL:  terminating connection due to administrator command
+2026-01-26 15:17:27.788 UTC [29] LOG:  shutting down
+2026-01-26 15:17:27.798 UTC [29] LOG:  checkpoint starting: shutdown immediate
+2026-01-26 15:17:27.858 UTC [29] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.014 s, sync=0.002 s, total=0.070 s; sync files=1, longest=0.002 s, average=0.002 s; distance=0 kB, estimate=103 kB; lsn=0/1F64AD8, redo lsn=0/1F64AD8
+2026-01-26 15:17:27.963 UTC [1] LOG:  database system is shut down

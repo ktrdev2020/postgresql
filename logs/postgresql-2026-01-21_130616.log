@@ -22,3 +22,5 @@
 	ORDER BY "MigrationId"
 2026-01-21 16:06:18.162 UTC [28] LOG:  checkpoint starting: time
 2026-01-21 16:06:27.390 UTC [28] LOG:  checkpoint complete: wrote 83 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=8.657 s, sync=0.388 s, total=9.230 s; sync files=74, longest=0.073 s, average=0.006 s; distance=329 kB, estimate=3488 kB; lsn=0/1D9AC68, redo lsn=0/1D9ABD8
+2026-01-21 16:11:18.631 UTC [28] LOG:  checkpoint starting: time
+2026-01-21 16:11:20.651 UTC [28] LOG:  checkpoint complete: wrote 20 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.934 s, sync=0.018 s, total=2.020 s; sync files=11, longest=0.006 s, average=0.002 s; distance=1 kB, estimate=3139 kB; lsn=0/1D9B088, redo lsn=0/1D9B030

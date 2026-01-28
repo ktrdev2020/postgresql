@@ -1,0 +1,19 @@
+2026-01-28 02:47:23.342 UTC,,,1,,697978bb.1,1,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"starting PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit",,,,,,,,,"","postmaster",,0
+2026-01-28 02:47:23.346 UTC,,,1,,697978bb.1,2,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"listening on IPv4 address ""0.0.0.0"", port 5432",,,,,,,,,"","postmaster",,0
+2026-01-28 02:47:23.346 UTC,,,1,,697978bb.1,3,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"listening on IPv6 address ""::"", port 5432",,,,,,,,,"","postmaster",,0
+2026-01-28 02:47:23.397 UTC,,,1,,697978bb.1,4,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"listening on Unix socket ""/var/run/postgresql/.s.PGSQL.5432""",,,,,,,,,"","postmaster",,0
+2026-01-28 02:47:23.515 UTC,,,31,,697978bb.1f,1,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"database system was shut down at 2026-01-27 14:07:31 UTC",,,,,,,,,"","startup",,0
+2026-01-28 02:47:23.682 UTC,,,1,,697978bb.1,5,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"database system is ready to accept connections",,,,,,,,,"","postmaster",,0
+2026-01-28 02:52:23.568 UTC,,,29,,697978bb.1d,1,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"checkpoint starting: time",,,,,,,,,"","checkpointer",,0
+2026-01-28 02:52:23.640 UTC,,,29,,697978bb.1d,2,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.022 s, sync=0.008 s, total=0.072 s; sync files=2, longest=0.004 s, average=0.004 s; distance=0 kB, estimate=0 kB; lsn=0/2027948, redo lsn=0/20278F0",,,,,,,,,"","checkpointer",,0
+2026-01-28 03:02:23.757 UTC,,,29,,697978bb.1d,3,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"checkpoint starting: time",,,,,,,,,"","checkpointer",,0
+2026-01-28 03:02:24.902 UTC,,,29,,697978bb.1d,4,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.119 s, sync=0.011 s, total=1.145 s; sync files=2, longest=0.007 s, average=0.006 s; distance=6 kB, estimate=6 kB; lsn=0/20293E0, redo lsn=0/2029388",,,,,,,,,"","checkpointer",,0
+2026-01-28 03:42:24.083 UTC,,,29,,697978bb.1d,5,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"checkpoint starting: time",,,,,,,,,"","checkpointer",,0
+2026-01-28 03:42:24.254 UTC,,,29,,697978bb.1d,6,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.117 s, sync=0.009 s, total=0.171 s; sync files=2, longest=0.006 s, average=0.005 s; distance=6 kB, estimate=6 kB; lsn=0/202AF28, redo lsn=0/202AED0",,,,,,,,,"","checkpointer",,0
+2026-01-28 04:08:35.456 UTC,,,1,,697978bb.1,6,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"received fast shutdown request",,,,,,,,,"","postmaster",,0
+2026-01-28 04:08:35.475 UTC,,,1,,697978bb.1,7,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"aborting any active transactions",,,,,,,,,"","postmaster",,0
+2026-01-28 04:08:35.486 UTC,,,1,,697978bb.1,8,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"background worker ""logical replication launcher"" (PID 34) exited with exit code 1",,,,,,,,,"","postmaster",,0
+2026-01-28 04:08:35.487 UTC,,,29,,697978bb.1d,7,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"shutting down",,,,,,,,,"","checkpointer",,0
+2026-01-28 04:08:35.493 UTC,,,29,,697978bb.1d,8,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"checkpoint starting: shutdown immediate",,,,,,,,,"","checkpointer",,0
+2026-01-28 04:08:35.552 UTC,,,29,,697978bb.1d,9,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.008 s, sync=0.001 s, total=0.066 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=6 kB; lsn=0/202AFD8, redo lsn=0/202AFD8",,,,,,,,,"","checkpointer",,0
+2026-01-28 04:08:35.610 UTC,,,1,,697978bb.1,9,,2026-01-28 02:47:23 UTC,,0,LOG,00000,"database system is shut down",,,,,,,,,"","postmaster",,0

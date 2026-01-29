@@ -1,0 +1,103 @@
+2026-01-29 14:32:56.917 UTC [1] LOG:  starting PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+2026-01-29 14:32:56.918 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-01-29 14:32:56.919 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-01-29 14:32:56.956 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-01-29 14:32:57.085 UTC [32] LOG:  database system was shut down at 2026-01-29 14:03:24 UTC
+2026-01-29 14:32:57.312 UTC [1] LOG:  database system is ready to accept connections
+2026-01-29 14:37:57.142 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 14:37:57.462 UTC [30] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.159 s, sync=0.043 s, total=0.314 s; sync files=3, longest=0.026 s, average=0.015 s; distance=1 kB, estimate=1 kB; lsn=0/210CD98, redo lsn=0/210CD40
+2026-01-29 14:42:57.534 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 14:42:59.067 UTC [30] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.442 s, sync=0.055 s, total=1.533 s; sync files=14, longest=0.024 s, average=0.004 s; distance=37 kB, estimate=37 kB; lsn=0/2123750, redo lsn=0/2116210
+2026-01-29 14:47:57.157 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 14:47:59.616 UTC [30] LOG:  checkpoint complete: wrote 24 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.362 s, sync=0.030 s, total=2.461 s; sync files=18, longest=0.005 s, average=0.002 s; distance=72 kB, estimate=72 kB; lsn=0/2128328, redo lsn=0/21282D0
+2026-01-29 15:12:57.873 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 15:12:58.078 UTC [30] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.121 s, sync=0.027 s, total=0.205 s; sync files=2, longest=0.014 s, average=0.014 s; distance=1 kB, estimate=65 kB; lsn=0/2128B10, redo lsn=0/2128AB8
+2026-01-29 15:22:57.213 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 15:22:57.919 UTC [30] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.623 s, sync=0.030 s, total=0.707 s; sync files=6, longest=0.014 s, average=0.005 s; distance=1 kB, estimate=58 kB; lsn=0/2129270, redo lsn=0/2129218
+2026-01-29 15:52:58.058 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 15:52:58.305 UTC [30] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.148 s, sync=0.030 s, total=0.251 s; sync files=2, longest=0.017 s, average=0.015 s; distance=2 kB, estimate=53 kB; lsn=0/2129B08, redo lsn=0/2129AB0
+2026-01-29 15:53:27.630 UTC [207] ERROR:  column "id" does not exist at character 66
+2026-01-29 15:53:27.630 UTC [207] HINT:  Perhaps you meant to reference the column "swot_items.Id".
+2026-01-29 15:53:27.630 UTC [207] STATEMENT:  
+	                WITH numbered AS (
+	                    SELECT id, 
+	                           ROW_NUMBER() OVER (PARTITION BY project_id, swot_type ORDER BY category_model, sequence_no, id) as rn
+	                    FROM swot_items
+	                )
+	                UPDATE swot_items 
+	                SET global_sequence_no = numbered.rn
+	                FROM numbered
+	                WHERE swot_items.id = numbered.id
+2026-01-29 15:57:58.382 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 15:58:03.075 UTC [30] LOG:  checkpoint complete: wrote 42 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.466 s, sync=0.046 s, total=4.693 s; sync files=25, longest=0.005 s, average=0.002 s; distance=212 kB, estimate=212 kB; lsn=0/215ECB8, redo lsn=0/215EC60
+2026-01-29 16:17:58.395 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 16:18:01.459 UTC [30] LOG:  checkpoint complete: wrote 30 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.913 s, sync=0.061 s, total=3.064 s; sync files=18, longest=0.014 s, average=0.004 s; distance=104 kB, estimate=201 kB; lsn=0/2178E68, redo lsn=0/2178E10
+2026-01-29 16:47:58.838 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 16:47:59.134 UTC [30] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.218 s, sync=0.036 s, total=0.297 s; sync files=3, longest=0.022 s, average=0.012 s; distance=2 kB, estimate=181 kB; lsn=0/2179860, redo lsn=0/2179808
+2026-01-29 16:52:58.141 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 16:52:58.378 UTC [30] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.125 s, sync=0.039 s, total=0.238 s; sync files=2, longest=0.027 s, average=0.020 s; distance=2 kB, estimate=163 kB; lsn=0/217A320, redo lsn=0/217A2C8
+2026-01-29 17:12:58.593 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 17:12:58.798 UTC [30] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.112 s, sync=0.020 s, total=0.205 s; sync files=2, longest=0.013 s, average=0.010 s; distance=2 kB, estimate=147 kB; lsn=0/217AE78, redo lsn=0/217AE20
+2026-01-29 17:27:58.948 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 17:27:59.391 UTC [30] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.319 s, sync=0.024 s, total=0.444 s; sync files=4, longest=0.016 s, average=0.006 s; distance=15 kB, estimate=134 kB; lsn=0/217EE48, redo lsn=0/217EDF0
+2026-01-29 18:25:19.576 UTC [549] ERROR:  column a.GoalId does not exist at character 513
+2026-01-29 18:25:19.576 UTC [549] STATEMENT:  SELECT a."Id", a."StrategyId", a."GoalId", a."ProjectName", a."ProjectCode", a."ManagementAreaType", a."IsAiGenerated", a."Objective", a."TargetGroup", a."StartDate", a."EndDate", a."TotalBudget", a."ResponsibleDepartment", a."KPI", t."StrategyCode", t."StrategyName", g."Code", g."Description", t."Id", g."Id", p."Id", p."Name", p."Description", p."Budget", p."StartDate", p."EndDate", p."OrderIndex"
+	FROM action_plans AS a
+	LEFT JOIN tows_strategies AS t ON a."StrategyId" = t."Id"
+	LEFT JOIN "Goals" AS g ON a."GoalId" = g."Id"
+	LEFT JOIN project_activities AS p ON a."Id" = p."ActionPlanId"
+	WHERE t."Id" IS NOT NULL AND t."ProjectId" = $1
+	ORDER BY a."ManagementAreaType", a."ProjectCode", a."Id", t."Id", g."Id", p."OrderIndex"
+2026-01-29 18:25:46.870 UTC [549] ERROR:  column a.GoalId does not exist at character 513
+2026-01-29 18:25:46.870 UTC [549] STATEMENT:  SELECT a."Id", a."StrategyId", a."GoalId", a."ProjectName", a."ProjectCode", a."ManagementAreaType", a."IsAiGenerated", a."Objective", a."TargetGroup", a."StartDate", a."EndDate", a."TotalBudget", a."ResponsibleDepartment", a."KPI", t."StrategyCode", t."StrategyName", g."Code", g."Description", t."Id", g."Id", p."Id", p."Name", p."Description", p."Budget", p."StartDate", p."EndDate", p."OrderIndex"
+	FROM action_plans AS a
+	LEFT JOIN tows_strategies AS t ON a."StrategyId" = t."Id"
+	LEFT JOIN "Goals" AS g ON a."GoalId" = g."Id"
+	LEFT JOIN project_activities AS p ON a."Id" = p."ActionPlanId"
+	WHERE t."Id" IS NOT NULL AND t."ProjectId" = $1
+	ORDER BY a."ManagementAreaType", a."ProjectCode", a."Id", t."Id", g."Id", p."OrderIndex"
+2026-01-29 18:32:59.022 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 18:33:03.435 UTC [30] LOG:  checkpoint complete: wrote 42 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.258 s, sync=0.061 s, total=4.418 s; sync files=32, longest=0.007 s, average=0.002 s; distance=160 kB, estimate=160 kB; lsn=0/21A7248, redo lsn=0/21A71B8
+2026-01-29 18:37:59.474 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 18:38:00.433 UTC [30] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.851 s, sync=0.044 s, total=0.959 s; sync files=6, longest=0.022 s, average=0.008 s; distance=12 kB, estimate=146 kB; lsn=0/21AA258, redo lsn=0/21AA200
+2026-01-29 18:42:59.511 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 18:42:59.772 UTC [30] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.133 s, sync=0.041 s, total=0.263 s; sync files=2, longest=0.027 s, average=0.021 s; distance=0 kB, estimate=131 kB; lsn=0/21AA3F0, redo lsn=0/21AA398
+2026-01-29 18:47:59.849 UTC [30] LOG:  checkpoint starting: time
+2026-01-29 18:48:00.466 UTC [30] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.526 s, sync=0.044 s, total=0.617 s; sync files=6, longest=0.023 s, average=0.008 s; distance=10 kB, estimate=119 kB; lsn=0/21ACE78, redo lsn=0/21ACE20
+2026-01-29 18:53:45.339 UTC [618] ERROR:  column a.ProjectId does not exist at character 16
+2026-01-29 18:53:45.339 UTC [618] HINT:  Perhaps you meant to reference the column "t.ProjectId".
+2026-01-29 18:53:45.339 UTC [618] STATEMENT:  SELECT a."Id", a."ProjectId", a."StrategyId", a."GoalId", a."ProjectName", a."ProjectCode", a."ManagementAreaType", a."IsAiGenerated", a."Objective", a."TargetGroup", a."StartDate", a."EndDate", a."TotalBudget", a."ResponsibleDepartment", a."KPI", t."StrategyCode", t."StrategyName", g."Code", g."Description", t."Id", g."Id", p."Id", p."Name", p."Description", p."Budget", p."StartDate", p."EndDate", p."OrderIndex"
+	FROM action_plans AS a
+	LEFT JOIN tows_strategies AS t ON a."StrategyId" = t."Id"
+	LEFT JOIN "Goals" AS g ON a."GoalId" = g."Id"
+	LEFT JOIN project_activities AS p ON a."Id" = p."ActionPlanId"
+	WHERE a."ProjectId" = $1
+	ORDER BY a."ManagementAreaType", a."ProjectCode", a."Id", t."Id", g."Id", p."OrderIndex"
+2026-01-29 18:59:28.273 UTC [630] ERROR:  column a.ProjectId does not exist at character 16
+2026-01-29 18:59:28.273 UTC [630] HINT:  Perhaps you meant to reference the column "t.ProjectId".
+2026-01-29 18:59:28.273 UTC [630] STATEMENT:  SELECT a."Id", a."ProjectId", a."StrategyId", a."GoalId", a."ProjectName", a."ProjectCode", a."ManagementAreaType", a."IsAiGenerated", a."Objective", a."TargetGroup", a."StartDate", a."EndDate", a."TotalBudget", a."ResponsibleDepartment", a."KPI", t."StrategyCode", t."StrategyName", g."Code", g."Description", t."Id", g."Id", p."Id", p."Name", p."Description", p."Budget", p."StartDate", p."EndDate", p."OrderIndex"
+	FROM action_plans AS a
+	LEFT JOIN tows_strategies AS t ON a."StrategyId" = t."Id"
+	LEFT JOIN "Goals" AS g ON a."GoalId" = g."Id"
+	LEFT JOIN project_activities AS p ON a."Id" = p."ActionPlanId"
+	WHERE a."ProjectId" = $1
+	ORDER BY a."ManagementAreaType", a."ProjectCode", a."Id", t."Id", g."Id", p."OrderIndex"
+2026-01-29 19:01:47.372 UTC [1] LOG:  received fast shutdown request
+2026-01-29 19:01:47.436 UTC [1] LOG:  aborting any active transactions
+2026-01-29 19:01:47.456 UTC [635] FATAL:  terminating connection due to administrator command
+2026-01-29 19:01:47.465 UTC [578] FATAL:  terminating connection due to administrator command
+2026-01-29 19:01:47.470 UTC [460] FATAL:  terminating connection due to administrator command
+2026-01-29 19:01:47.490 UTC [458] FATAL:  terminating connection due to administrator command
+2026-01-29 19:01:47.516 UTC [456] FATAL:  terminating connection due to administrator command
+2026-01-29 19:01:47.523 UTC [407] FATAL:  terminating connection due to administrator command
+2026-01-29 19:01:47.523 UTC [574] FATAL:  terminating connection due to administrator command
+2026-01-29 19:01:47.561 UTC [410] FATAL:  terminating connection due to administrator command
+2026-01-29 19:01:47.565 UTC [409] FATAL:  terminating connection due to administrator command
+2026-01-29 19:01:47.571 UTC [406] FATAL:  terminating connection due to administrator command
+2026-01-29 19:01:47.669 UTC [405] FATAL:  terminating connection due to administrator command
+2026-01-29 19:01:47.936 UTC [1] LOG:  background worker "logical replication launcher" (PID 35) exited with exit code 1
+2026-01-29 19:01:48.253 UTC [30] LOG:  shutting down
+2026-01-29 19:01:48.260 UTC [30] LOG:  checkpoint starting: shutdown immediate
+2026-01-29 19:01:48.389 UTC [640] FATAL:  the database system is shutting down
+2026-01-29 19:01:48.407 UTC [30] LOG:  checkpoint complete: wrote 13 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.065 s, sync=0.025 s, total=0.154 s; sync files=13, longest=0.004 s, average=0.002 s; distance=47 kB, estimate=112 kB; lsn=0/21B8C28, redo lsn=0/21B8C28
+2026-01-29 19:01:48.626 UTC [1] LOG:  database system is shut down

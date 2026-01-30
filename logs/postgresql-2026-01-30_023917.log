@@ -1,0 +1,206 @@
+2026-01-30 02:39:17.369 UTC [1] LOG:  starting PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+2026-01-30 02:39:17.372 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-01-30 02:39:17.372 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-01-30 02:39:17.398 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-01-30 02:39:17.470 UTC [31] LOG:  database system was shut down at 2026-01-29 19:01:48 UTC
+2026-01-30 02:39:17.642 UTC [1] LOG:  database system is ready to accept connections
+2026-01-30 02:44:17.502 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 02:44:17.720 UTC [29] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.135 s, sync=0.018 s, total=0.218 s; sync files=3, longest=0.009 s, average=0.006 s; distance=3 kB, estimate=3 kB; lsn=0/21B98C0, redo lsn=0/21B9868
+2026-01-30 02:54:02.125 UTC [89] ERROR:  column "id" does not exist at character 8
+2026-01-30 02:54:02.125 UTC [89] HINT:  Perhaps you meant to reference the column "action_plans.Id".
+2026-01-30 02:54:02.125 UTC [89] STATEMENT:  SELECT id, "ProjectName", "ProjectId" FROM action_plans LIMIT 10;
+2026-01-30 02:54:07.292 UTC [89] ERROR:  column "id" does not exist at character 8
+2026-01-30 02:54:07.292 UTC [89] HINT:  Perhaps you meant to reference the column "action_plans.Id".
+2026-01-30 02:54:07.292 UTC [89] STATEMENT:  SELECT id, "ProjectName", "ProjectId" FROM action_plans LIMIT 10;
+2026-01-30 02:54:32.861 UTC [89] ERROR:  column "id" does not exist at character 8
+2026-01-30 02:54:32.861 UTC [89] HINT:  Perhaps you meant to reference the column "action_plans.Id".
+2026-01-30 02:54:32.861 UTC [89] STATEMENT:  SELECT Id, "ProjectName", "ProjectId" FROM action_plans LIMIT 10;
+2026-01-30 02:54:55.010 UTC [89] ERROR:  column "ld" does not exist at character 8
+2026-01-30 02:54:55.010 UTC [89] HINT:  Perhaps you meant to reference the column "action_plans.Id".
+2026-01-30 02:54:55.010 UTC [89] STATEMENT:  SELECT ld, "ProjectName", "ProjectId" FROM action_plans LIMIT 10;
+2026-01-30 02:55:33.325 UTC [89] ERROR:  column "id" does not exist at character 30
+2026-01-30 02:55:33.325 UTC [89] HINT:  Perhaps you meant to reference the column "projects.Id".
+2026-01-30 02:55:33.325 UTC [89] STATEMENT:  SELECT * FROM projects WHERE id = 1;
+2026-01-30 03:09:17.937 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 03:09:17.996 UTC [29] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.012 s, sync=0.005 s, total=0.060 s; sync files=1, longest=0.005 s, average=0.005 s; distance=0 kB, estimate=2 kB; lsn=0/21B9A58, redo lsn=0/21B9A00
+2026-01-30 03:14:18.060 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 03:14:18.871 UTC [29] LOG:  checkpoint complete: wrote 8 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.729 s, sync=0.027 s, total=0.812 s; sync files=7, longest=0.005 s, average=0.004 s; distance=33 kB, estimate=33 kB; lsn=0/21C2020, redo lsn=0/21C1FB0
+2026-01-30 03:19:18.863 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 03:19:18.945 UTC [29] LOG:  checkpoint complete: wrote 1 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.015 s, sync=0.005 s, total=0.082 s; sync files=1, longest=0.005 s, average=0.005 s; distance=0 kB, estimate=30 kB; lsn=0/21C21B8, redo lsn=0/21C2160
+2026-01-30 03:24:18.959 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 03:24:20.926 UTC [29] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.439 s, sync=0.045 s, total=1.968 s; sync files=13, longest=0.006 s, average=0.004 s; distance=49 kB, estimate=49 kB; lsn=0/21CE658, redo lsn=0/21CE600
+2026-01-30 03:44:19.185 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 03:44:19.400 UTC [29] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.122 s, sync=0.013 s, total=0.216 s; sync files=2, longest=0.008 s, average=0.007 s; distance=0 kB, estimate=44 kB; lsn=0/21CE7F0, redo lsn=0/21CE798
+2026-01-30 03:54:19.442 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 03:54:19.627 UTC [29] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.120 s, sync=0.009 s, total=0.185 s; sync files=2, longest=0.006 s, average=0.005 s; distance=3 kB, estimate=40 kB; lsn=0/21CF4A8, redo lsn=0/21CF450
+2026-01-30 04:04:19.724 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 04:04:21.069 UTC [29] LOG:  checkpoint complete: wrote 14 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.239 s, sync=0.037 s, total=1.345 s; sync files=10, longest=0.005 s, average=0.004 s; distance=65 kB, estimate=65 kB; lsn=0/21E4A78, redo lsn=0/21DF968
+2026-01-30 04:49:19.463 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 04:49:19.990 UTC [29] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.442 s, sync=0.017 s, total=0.528 s; sync files=4, longest=0.007 s, average=0.005 s; distance=20 kB, estimate=60 kB; lsn=0/21E4C10, redo lsn=0/21E4BB8
+2026-01-30 04:59:20.048 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 04:59:23.202 UTC [29] LOG:  checkpoint complete: wrote 31 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.051 s, sync=0.045 s, total=3.154 s; sync files=13, longest=0.005 s, average=0.004 s; distance=161 kB, estimate=161 kB; lsn=0/220D338, redo lsn=0/220D2E0
+2026-01-30 05:09:20.343 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 05:09:23.190 UTC [29] LOG:  checkpoint complete: wrote 27 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.706 s, sync=0.073 s, total=2.847 s; sync files=20, longest=0.007 s, average=0.004 s; distance=96 kB, estimate=155 kB; lsn=0/2225688, redo lsn=0/2225630
+2026-01-30 05:14:20.269 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 05:14:20.442 UTC [29] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.115 s, sync=0.008 s, total=0.173 s; sync files=2, longest=0.005 s, average=0.004 s; distance=3 kB, estimate=140 kB; lsn=0/2226600, redo lsn=0/22265A8
+2026-01-30 05:18:42.059 UTC [398] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:18:42.059 UTC [398] DETAIL:  Key (Id)=(45) is still referenced from table "action_plans".
+2026-01-30 05:18:42.059 UTC [398] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:18:45.270 UTC [398] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:18:45.270 UTC [398] DETAIL:  Key (Id)=(45) is still referenced from table "action_plans".
+2026-01-30 05:18:45.270 UTC [398] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:18:48.542 UTC [398] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:18:48.542 UTC [398] DETAIL:  Key (Id)=(45) is still referenced from table "action_plans".
+2026-01-30 05:18:48.542 UTC [398] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:18:52.031 UTC [398] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:18:52.031 UTC [398] DETAIL:  Key (Id)=(45) is still referenced from table "action_plans".
+2026-01-30 05:18:52.031 UTC [398] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:18:55.088 UTC [398] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:18:55.088 UTC [398] DETAIL:  Key (Id)=(45) is still referenced from table "action_plans".
+2026-01-30 05:18:55.088 UTC [398] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:18:58.225 UTC [398] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:18:58.225 UTC [398] DETAIL:  Key (Id)=(45) is still referenced from table "action_plans".
+2026-01-30 05:18:58.225 UTC [398] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:19:02.672 UTC [398] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:19:02.672 UTC [398] DETAIL:  Key (Id)=(61) is still referenced from table "action_plans".
+2026-01-30 05:19:02.672 UTC [398] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:19:19.287 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:19:19.287 UTC [410] DETAIL:  Key (Id)=(41) is still referenced from table "action_plans".
+2026-01-30 05:19:19.287 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:19:20.517 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 05:19:23.921 UTC [29] LOG:  checkpoint complete: wrote 34 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.271 s, sync=0.067 s, total=3.404 s; sync files=19, longest=0.005 s, average=0.004 s; distance=132 kB, estimate=139 kB; lsn=0/22478C8, redo lsn=0/2247838
+2026-01-30 05:19:24.333 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:19:24.333 UTC [410] DETAIL:  Key (Id)=(41) is still referenced from table "action_plans".
+2026-01-30 05:19:24.333 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:19:31.286 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:19:31.286 UTC [410] DETAIL:  Key (Id)=(56) is still referenced from table "action_plans".
+2026-01-30 05:19:31.286 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:19:38.066 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:19:38.066 UTC [410] DETAIL:  Key (Id)=(54) is still referenced from table "action_plans".
+2026-01-30 05:19:38.066 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:19:42.396 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:19:42.396 UTC [410] DETAIL:  Key (Id)=(53) is still referenced from table "action_plans".
+2026-01-30 05:19:42.396 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:19:46.952 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:19:46.952 UTC [410] DETAIL:  Key (Id)=(52) is still referenced from table "action_plans".
+2026-01-30 05:19:46.952 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:19:50.545 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:19:50.545 UTC [410] DETAIL:  Key (Id)=(50) is still referenced from table "action_plans".
+2026-01-30 05:19:50.545 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:20:01.294 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:20:01.294 UTC [410] DETAIL:  Key (Id)=(41) is still referenced from table "action_plans".
+2026-01-30 05:20:01.294 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:20:04.879 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:20:04.879 UTC [410] DETAIL:  Key (Id)=(50) is still referenced from table "action_plans".
+2026-01-30 05:20:04.879 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:20:10.615 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:20:10.615 UTC [410] DETAIL:  Key (Id)=(50) is still referenced from table "action_plans".
+2026-01-30 05:20:10.615 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:20:17.590 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:20:17.590 UTC [410] DETAIL:  Key (Id)=(51) is still referenced from table "action_plans".
+2026-01-30 05:20:17.590 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:20:21.102 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:20:21.102 UTC [410] DETAIL:  Key (Id)=(52) is still referenced from table "action_plans".
+2026-01-30 05:20:21.102 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:20:27.488 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:20:27.488 UTC [410] DETAIL:  Key (Id)=(52) is still referenced from table "action_plans".
+2026-01-30 05:20:27.488 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:20:33.470 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:20:33.470 UTC [410] DETAIL:  Key (Id)=(53) is still referenced from table "action_plans".
+2026-01-30 05:20:33.470 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:20:39.663 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:20:39.663 UTC [410] DETAIL:  Key (Id)=(54) is still referenced from table "action_plans".
+2026-01-30 05:20:39.663 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:20:45.615 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:20:45.615 UTC [410] DETAIL:  Key (Id)=(56) is still referenced from table "action_plans".
+2026-01-30 05:20:45.615 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:21:15.500 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:21:15.500 UTC [410] DETAIL:  Key (Id)=(47) is still referenced from table "action_plans".
+2026-01-30 05:21:15.500 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:21:19.402 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:21:19.402 UTC [410] DETAIL:  Key (Id)=(48) is still referenced from table "action_plans".
+2026-01-30 05:21:19.402 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:21:22.933 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:21:22.933 UTC [410] DETAIL:  Key (Id)=(62) is still referenced from table "action_plans".
+2026-01-30 05:21:22.933 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:21:27.862 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:21:27.862 UTC [410] DETAIL:  Key (Id)=(48) is still referenced from table "action_plans".
+2026-01-30 05:21:27.862 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:21:35.168 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:21:35.168 UTC [410] DETAIL:  Key (Id)=(47) is still referenced from table "action_plans".
+2026-01-30 05:21:35.168 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:23:37.489 UTC [410] ERROR:  update or delete on table "Goals" violates foreign key constraint "FK_action_plans_Goals_GoalId" on table "action_plans"
+2026-01-30 05:23:37.489 UTC [410] DETAIL:  Key (Id)=(50) is still referenced from table "action_plans".
+2026-01-30 05:23:37.489 UTC [410] STATEMENT:  DELETE FROM "Goals"
+	WHERE "Id" = $1
+2026-01-30 05:24:20.998 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 05:24:21.597 UTC [29] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.521 s, sync=0.015 s, total=0.600 s; sync files=3, longest=0.006 s, average=0.005 s; distance=28 kB, estimate=128 kB; lsn=0/224E910, redo lsn=0/224E8B8
+2026-01-30 05:33:16.139 UTC [471] ERROR:  insert or update on table "Goals" violates foreign key constraint "FK_Goals_projects_ProjectId"
+2026-01-30 05:33:16.139 UTC [471] DETAIL:  Key (ProjectId)=(0) is not present in table "projects".
+2026-01-30 05:33:16.139 UTC [471] STATEMENT:  ALTER TABLE "Goals" ADD CONSTRAINT "FK_Goals_projects_ProjectId" FOREIGN KEY ("ProjectId") REFERENCES projects ("Id") ON DELETE CASCADE
+2026-01-30 05:34:20.687 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 05:34:24.540 UTC [29] LOG:  checkpoint complete: wrote 37 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.672 s, sync=0.122 s, total=3.854 s; sync files=31, longest=0.010 s, average=0.004 s; distance=152 kB, estimate=152 kB; lsn=0/2274CD8, redo lsn=0/2274C80
+2026-01-30 05:38:03.274 UTC [483] ERROR:  insert or update on table "Goals" violates foreign key constraint "FK_Goals_projects_ProjectId"
+2026-01-30 05:38:03.274 UTC [483] DETAIL:  Key (ProjectId)=(0) is not present in table "projects".
+2026-01-30 05:38:03.274 UTC [483] STATEMENT:  ALTER TABLE "Goals" ADD CONSTRAINT "FK_Goals_projects_ProjectId" FOREIGN KEY ("ProjectId") REFERENCES projects ("Id") ON DELETE CASCADE
+2026-01-30 05:39:20.509 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 05:39:24.127 UTC [29] LOG:  checkpoint complete: wrote 34 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.455 s, sync=0.100 s, total=3.618 s; sync files=28, longest=0.007 s, average=0.004 s; distance=158 kB, estimate=158 kB; lsn=0/229C8C0, redo lsn=0/229C868
+2026-01-30 05:44:20.202 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 05:44:26.700 UTC [29] LOG:  checkpoint complete: wrote 62 buffers (0.4%); 0 WAL file(s) added, 0 removed, 0 recycled; write=6.284 s, sync=0.157 s, total=6.498 s; sync files=46, longest=0.007 s, average=0.004 s; distance=288 kB, estimate=288 kB; lsn=0/22E4AE0, redo lsn=0/22E4A50
+2026-01-30 06:24:22.072 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 06:24:22.358 UTC [29] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.214 s, sync=0.009 s, total=0.286 s; sync files=2, longest=0.005 s, average=0.005 s; distance=5 kB, estimate=260 kB; lsn=0/22E5F40, redo lsn=0/22E5EE8
+2026-01-30 06:59:22.720 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 06:59:26.758 UTC [29] LOG:  checkpoint complete: wrote 39 buffers (0.2%); 0 WAL file(s) added, 0 removed, 0 recycled; write=3.887 s, sync=0.093 s, total=4.039 s; sync files=30, longest=0.005 s, average=0.004 s; distance=172 kB, estimate=251 kB; lsn=0/2311288, redo lsn=0/2311230
+2026-01-30 07:04:22.838 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 07:04:27.479 UTC [29] LOG:  checkpoint complete: wrote 46 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.510 s, sync=0.088 s, total=4.642 s; sync files=30, longest=0.006 s, average=0.003 s; distance=205 kB, estimate=246 kB; lsn=0/23449A0, redo lsn=0/2344948
+2026-01-30 07:24:22.684 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 07:24:23.801 UTC [29] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.033 s, sync=0.023 s, total=1.117 s; sync files=7, longest=0.006 s, average=0.004 s; distance=12 kB, estimate=223 kB; lsn=0/23479C0, redo lsn=0/2347968
+2026-01-30 07:44:23.065 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 07:44:24.256 UTC [29] LOG:  checkpoint complete: wrote 11 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.010 s, sync=0.031 s, total=1.192 s; sync files=7, longest=0.010 s, average=0.005 s; distance=14 kB, estimate=202 kB; lsn=0/234B590, redo lsn=0/234B538
+2026-01-30 07:49:23.314 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 07:49:24.911 UTC [29] LOG:  checkpoint complete: wrote 15 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.432 s, sync=0.029 s, total=1.598 s; sync files=8, longest=0.005 s, average=0.004 s; distance=44 kB, estimate=186 kB; lsn=0/2358DB0, redo lsn=0/2356598
+2026-01-30 07:54:23.957 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 07:54:25.877 UTC [29] LOG:  checkpoint complete: wrote 19 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=1.790 s, sync=0.043 s, total=1.920 s; sync files=13, longest=0.006 s, average=0.004 s; distance=63 kB, estimate=174 kB; lsn=0/2366560, redo lsn=0/2366508
+2026-01-30 07:59:23.947 UTC [29] LOG:  checkpoint starting: time
+2026-01-30 07:59:24.759 UTC [29] LOG:  checkpoint complete: wrote 9 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.735 s, sync=0.024 s, total=0.813 s; sync files=7, longest=0.006 s, average=0.004 s; distance=19 kB, estimate=158 kB; lsn=0/236B298, redo lsn=0/236B240
+2026-01-30 08:10:39.903 UTC [1] LOG:  received fast shutdown request
+2026-01-30 08:10:39.920 UTC [1] LOG:  aborting any active transactions
+2026-01-30 08:10:39.934 UTC [85] FATAL:  terminating connection due to administrator command
+2026-01-30 08:10:39.933 UTC [449] FATAL:  terminating connection due to administrator command
+2026-01-30 08:10:39.954 UTC [428] FATAL:  terminating connection due to administrator command
+2026-01-30 08:10:39.958 UTC [234] FATAL:  terminating connection due to administrator command
+2026-01-30 08:10:39.970 UTC [81] FATAL:  terminating connection due to administrator command
+2026-01-30 08:10:39.971 UTC [423] FATAL:  terminating connection due to administrator command
+2026-01-30 08:10:39.973 UTC [1] LOG:  background worker "logical replication launcher" (PID 34) exited with exit code 1
+2026-01-30 08:10:40.101 UTC [29] LOG:  shutting down
+2026-01-30 08:10:40.108 UTC [29] LOG:  checkpoint starting: shutdown immediate
+2026-01-30 08:10:40.190 UTC [29] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.009 s, sync=0.001 s, total=0.089 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=143 kB; lsn=0/236B348, redo lsn=0/236B348
+2026-01-30 08:10:40.267 UTC [1] LOG:  database system is shut down

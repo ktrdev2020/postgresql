@@ -1,0 +1,21 @@
+2026-02-01 23:29:33.095 UTC [1] LOG:  starting PostgreSQL 17.7 (Debian 17.7-3.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+2026-02-01 23:29:33.097 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-02-01 23:29:33.098 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-02-01 23:29:33.118 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-02-01 23:29:33.194 UTC [30] LOG:  database system was shut down at 2026-01-31 06:54:46 UTC
+2026-02-01 23:29:33.372 UTC [1] LOG:  database system is ready to accept connections
+2026-02-01 23:34:33.178 UTC [28] LOG:  checkpoint starting: time
+2026-02-01 23:34:34.231 UTC [28] LOG:  checkpoint complete: wrote 12 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.943 s, sync=0.047 s, total=1.053 s; sync files=10, longest=0.009 s, average=0.005 s; distance=37 kB, estimate=37 kB; lsn=0/23B3FB8, redo lsn=0/23A8F90
+2026-02-01 23:39:33.301 UTC [28] LOG:  checkpoint starting: time
+2026-02-01 23:39:35.456 UTC [28] LOG:  checkpoint complete: wrote 22 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.049 s, sync=0.044 s, total=2.155 s; sync files=12, longest=0.005 s, average=0.004 s; distance=106 kB, estimate=106 kB; lsn=0/23C3848, redo lsn=0/23C37F0
+2026-02-01 23:44:33.485 UTC [28] LOG:  checkpoint starting: time
+2026-02-01 23:44:36.744 UTC [28] LOG:  checkpoint complete: wrote 22 buffers (0.1%); 0 WAL file(s) added, 0 removed, 0 recycled; write=2.495 s, sync=0.247 s, total=3.260 s; sync files=12, longest=0.073 s, average=0.021 s; distance=106 kB, estimate=106 kB; lsn=0/23DE2D0, redo lsn=0/23DE278
+2026-02-01 23:49:33.741 UTC [28] LOG:  checkpoint starting: time
+2026-02-01 23:49:34.350 UTC [28] LOG:  checkpoint complete: wrote 7 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.534 s, sync=0.023 s, total=0.610 s; sync files=6, longest=0.006 s, average=0.004 s; distance=25 kB, estimate=98 kB; lsn=0/23E4890, redo lsn=0/23E4838
+2026-02-01 23:54:47.897 UTC [1] LOG:  received fast shutdown request
+2026-02-01 23:54:47.914 UTC [1] LOG:  aborting any active transactions
+2026-02-01 23:54:47.918 UTC [1] LOG:  background worker "logical replication launcher" (PID 33) exited with exit code 1
+2026-02-01 23:54:47.919 UTC [28] LOG:  shutting down
+2026-02-01 23:54:47.925 UTC [28] LOG:  checkpoint starting: shutdown immediate
+2026-02-01 23:54:47.984 UTC [28] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.010 s, sync=0.001 s, total=0.066 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=88 kB; lsn=0/23E4940, redo lsn=0/23E4940
+2026-02-01 23:54:48.032 UTC [1] LOG:  database system is shut down

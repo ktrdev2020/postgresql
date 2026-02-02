@@ -1,0 +1,6 @@
+# Ignore Database Runtime files
+data/postmaster.pid
+
+# Ignore all Log files
+logs/*.log
+logs/*.csv

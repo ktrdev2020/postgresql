@@ -1,2 +1,2 @@
-stderr /var/log/postgresql/postgresql-2026-02-25_104231.log
-csvlog /var/log/postgresql/postgresql-2026-02-25_104231.csv
+stderr /var/log/postgresql/postgresql-2026-03-14_043829.log
+csvlog /var/log/postgresql/postgresql-2026-03-14_043829.csv

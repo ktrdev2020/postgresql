@@ -1,0 +1,3 @@
+VHOST: /
+QUEUE: shared_prompt_queue
+INDEX: v2
